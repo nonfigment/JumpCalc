@@ -1,7 +1,7 @@
 package com.redshift.jumpcalc;
 
-public class logic {
-        public static void main(String[] args) {
+public class Logic {
+        public void input() {
 //           //Старая логика работы
 //
 //            //общая примерная дистанция между кораблями, до тех пор, пока кто-то из пилотов не начнет движение

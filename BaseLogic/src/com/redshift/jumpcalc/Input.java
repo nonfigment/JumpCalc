@@ -22,7 +22,7 @@ public class Input {
             String sLy = bufferedReader.readLine();
             int distance = Integer.parseInt(sLy);
             confirm();
-             = new (distance);
+            LogicNew.calc(distance);
         } catch (Exception e) {
             String error = "Error! Please, check the data you've provided";
             System.out.println(error);
