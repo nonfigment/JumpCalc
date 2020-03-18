@@ -1,6 +1,7 @@
+/*
 package com.redshift.jumpcalc;
 
-public class Logic {
+//public class Logic {
         public void input() {
 //           //Старая логика работы
 //
@@ -69,3 +70,4 @@ public class Logic {
 //                System.out.println("Something went wrong, please, check your data and BL FSD-related specs.");
             }
         }
+*/
