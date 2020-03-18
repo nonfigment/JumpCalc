@@ -1,11 +1,12 @@
 package com.redshift.jumpcalc;
 
 public class Ship {
+
     String name;
     float range;
     boolean hasmodifiers;
 
-    public float getRange() {
+    /*public float getRange() {
         return range;
     }
 
@@ -23,5 +24,5 @@ public class Ship {
 
     public void setHasmodifiers(boolean hasmodifiers) {
         this.hasmodifiers = hasmodifiers;
-    }
+    }*/
 }
