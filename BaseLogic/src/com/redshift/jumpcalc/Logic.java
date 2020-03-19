@@ -11,23 +11,20 @@ public class Logic {
     //TODO: refuel multiplier?
     static final float DELAYBASE = FSD_SUM + REFUELBASE + ESCAPEROUTE;
 
-    public float calc(float distance, float range1, float range2) {
+    public long calc(float distance, float range1, float range2) {
 
         float routetimeOne = DELAYBASE * (distance / range1);
         float routetimeTwo = DELAYBASE * (distance / range2);
-        float result = 0;
 
         if (routetimeOne > 0) {
-            result = s2hConverter(Math.min(routetimeOne, routetimeTwo));
+            return s2hConverter(Math.min(routetimeOne, routetimeTwo));
         } else {
             System.out.println("Error, please check data you've entered");
+            return 0;
         }
-
-        return result;
-
     }
 
-    private float s2hConverter(float seconds) {
-        return seconds / 3600;
+    private long s2hConverter(float seconds) {
+        return (long) (seconds *1000);
     }
 }

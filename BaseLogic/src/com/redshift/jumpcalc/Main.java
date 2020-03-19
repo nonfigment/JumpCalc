@@ -1,6 +1,11 @@
 package com.redshift.jumpcalc;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Main {
+
+    private final static SimpleDateFormat TIME_FORMATTER = new SimpleDateFormat("HH:mm:ss");
 
     public static void main(String[] args) {
 
@@ -18,9 +23,12 @@ public class Main {
         float distance = inputManager.readDistance();
 
         Logic logic = new Logic();
-        float result=logic.calc(distance, ship1.range, ship2.range);
-        System.out.println(result);
-//TODO: create console output for results with ship names and final result in HOURS for rendezvous point reach)
+        long time = logic.calc(distance, ship1.range, ship2.range);
+
+        System.out.println(TIME_FORMATTER.format(new Date(time)));
+
+        //TODO: create console output for results with ship names and final result in HOURS for rendezvous point reach)
+
     }
 
 }
