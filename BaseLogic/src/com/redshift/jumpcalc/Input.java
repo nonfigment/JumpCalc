@@ -17,7 +17,7 @@ public class Input {
         ship.range = readFloat(" Enter " + ship.name + " current LY range:");
     }
 
-    public float readDistance(){
+    public float readDistance() {
         return readFloat(" Enter the distance between ships according to galaxy map route builder: ");
     }
 
